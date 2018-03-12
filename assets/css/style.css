@@ -1,0 +1,379 @@
+/*
+Theme Name: Leitor Hipster Theme
+Theme URI: http://leitorhipster.com
+Author: Leonardo Matos
+Description: Tema criado para o blog Leitor Hipster
+Version: 1.0
+*/
+
+
+@import 'css/reset.css';
+@import 'css/normalize.css';
+@import 'css/grid.css';
+
+
+/* Config Gerais */
+
+html {
+  box-sizing: border-box;
+}
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Lora', serif;
+	color: #383549;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.texto p{
+	margin-bottom: 20px;
+	text-indent: 0.625em;
+	line-height: 1.500em;
+}
+
+.botao {
+	display: block;
+	padding: 10px;
+	border: 3px solid #25262E;
+	width: 140px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	font-weight: bold;
+	margin: 0 auto;
+	color: #383549;
+}
+
+.botao:hover {
+	background: #25262E;
+	color: #F2625D;
+}
+
+/* header e menu */
+
+.header {
+	margin-bottom: 40px;
+}
+
+.menu-icon {
+	text-align: right;
+	background: #2C2D35;
+	color: #fff;
+	cursor: pointer;
+	padding: 15px 24px;
+	display: none;
+}
+
+.logo {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.logo a {
+	padding: 20px;
+	display: inline-block;
+}
+
+
+.logo img {
+	width: 160px;
+}
+
+.nav-menu {
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	transition: .5s;
+}
+
+.nav-menu ul {
+	padding: 25px 0;
+	text-align: center;
+}
+
+.nav-menu ul li {
+	display: inline-block;
+}
+
+.nav-menu ul li a {
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+	color: #383549;
+}
+
+.nav-menu ul li a:hover {
+	color: #F2625D;
+}
+
+.nav-menu li::before {
+	content: '•';
+	margin-right: 5px;
+}
+
+.nav-menu ul li:first-child::before {
+	content: '';
+}
+
+.menu-fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #2C2D35;
+	border: none;
+	color: #fff;
+}
+
+/*Post*/
+
+.titulo-categoria {
+	border-bottom: 3px solid #F2625D;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 0 8px 10px;
+	margin-bottom: 30px;
+}
+
+.post {
+	margin-bottom: 30px;
+}
+
+.post-header {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.post-header h3 a{
+	font-size: 1.563em;
+	display: block;
+	font-family: 'Roboto Slab', serif;
+	color: #383549;
+}
+
+.post-header h3 a:hover, .call-to-action:hover {
+	color: #F2625D;
+}
+
+.post-header p {
+	margin-top: 12px;
+	color: #787878;
+	font-size: 0.750em;
+}
+
+.post-img {
+	max-width: 696px;
+}
+
+.autor-post {
+	color: #000;
+	font-weight: bold;
+}
+
+.post-resumo {
+	text-align: center;
+	margin-top: 20px;
+	color: #787878;
+	font-size: 1.125em;
+	line-height: 25px;
+}
+
+.call-to-action {
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 1.125em;
+	font-weight: bold;
+	color: #383549;
+}
+
+.email {
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+/* Sidebar */
+
+.categoria {
+	margin-bottom: 40px;
+}
+
+.autor-img img {
+	border-radius: 50%;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.autor-descricao{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.autor-descricao h3 {
+	font-weight: bold;
+	font-size: 1.125em;
+	margin: 20px 0;
+}
+
+.autor-descricao p {
+	line-height: 20px;
+	color: #555;
+	font-size: 0.938em;
+}
+
+/*Arrumar aqui!!!!*/
+
+.nav-social {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav-social ul li:nth-child(2) {
+	margin: 0 5px;
+}
+
+.nav-social ul li {
+	display: inline-block;
+	border: 1px solid #eaeaea;
+	width: 30%;
+}
+
+.nav-social ul li a {
+	color: #555;
+	font-size: 0.875em;
+	padding: 10px 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.nav-social ul li a img {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 886px) {
+	.nav-social ul li a {
+		font-size: 0.750em;
+	}
+}
+
+/*footer*/
+
+.footer {
+	background: #2C2D35;
+	color: #fff;
+	padding: 30px 0 5px 0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 40px;
+}
+
+.logo-footer {
+	margin-bottom: 30px;
+}
+
+.logo-footer a {
+	display: inline-block;
+}
+
+.logo-footer img {
+	margin-bottom: 20px;
+	width: 180px;
+}
+
+.social-footer ul li {
+	margin: 30px 0;
+	display: block;
+	text-align: left;
+}
+
+.social-footer ul li a {
+	color: #fff;
+	padding: 10px;
+}
+
+.social-footer ul li a img {
+	display: inline-block;
+	vertical-align: middle;
+	background: #fff;
+}
+
+.social-footer ul li a span {
+	margin-left: 20px;
+}
+
+.copy {
+	font-size: 0.875em;
+}
+
+/* Media Query*/
+
+@media only screen and (max-width: 768px) {
+	.menu-icon {
+		display: block;
+	}
+
+	.nav-menu ul {
+		max-height: 0px;
+		padding: 0;
+		background: #2C2D35;
+		overflow: hidden;
+		transition: .5s;
+	}
+
+	.nav-menu ul.mostrar-menu {
+		max-height: 20em;
+	}
+
+	.nav-menu ul li {
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.nav-menu li::before {
+		content: '';
+		margin-right: 0px;
+	}
+
+	.nav-menu ul li a {
+		color: #fff;
+		display: block;
+	}
+
+	.autor-descricao p {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.nav-social ul {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.nav-social ul li {
+		width: 25%;
+	}
+
+	.nav-social ul li a {
+		font-size: 0.750em;
+		padding: 10px 0;
+	}
+	
+
+	.logo-footer {
+		margin-bottom: 10px;
+	}
+
+	.social-footer ul li {
+		display: inline-block;
+		margin: 20px 0;
+	}
+	.social-footer li a span {
+		display: none;
+	}
+}
