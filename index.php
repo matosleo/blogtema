@@ -64,8 +64,6 @@
 					endif; 
 				?>
 			</div>
-
-			<?php echo teste ?>
 			
 		</div>
 
